@@ -1,0 +1,87 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,700,900");
+
+/* Resets */
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 20px 0;
+  padding: 0 20px;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  font-family: Roboto;
+  font-weight: 700;
+  width: 45%;
+  padding: 6px;
+  margin: 2%;
+}
+
+.button-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  border: 1px solid #000;
+}
+
+.button-quote {
+  width: 20%;
+  margin: 5px;
+  margin-left: 15px;
+  padding: 2px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 14px;
+  font-family: roboto;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+span {
+  font-style: italic;
+}
+.span-author {
+  font-style: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .button-container {
+    flex-flow: column wrap;
+  }
+  .button-container > button {
+    align-items: center;
+    width: 95%;
+  }
+  li {
+    font-size: 18px;
+    border: 0.5px solid #000;
+    width: 100%;
+    align-items: center;
+    text-align: start;
+    padding: 3px;
+    margin-bottom: 6px;
+  }
+  .button-quote {
+    width: 100%;
+    margin: 0;
+  }
+}
